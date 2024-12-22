@@ -1,0 +1,16 @@
+{% extends "mail/layout.html" %}
+{% load static %}
+
+{% block body %}
+<div class="hidden" id="user_email">{{ request.user.email }}</div>
+
+<div style="background-color: rgb(255 255 255);">
+    <div id="root">
+    </div>
+</div>
+{% endblock %}
+
+{% block script %}
+    <script src="https://kit.fontawesome.com/29afb26063.js" crossorigin="anonymous"></script>
+    
+{% endblock %}
